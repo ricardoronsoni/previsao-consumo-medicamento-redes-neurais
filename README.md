@@ -53,7 +53,8 @@ Segue abaixo o RMSE obtido para cada modelo produzido.
 |-----------------------------------|:--------------:|:------------------------------------------------------:|
 | Filgrastim 300mcg injetável       |    1489,7211   |           643,5465 (397,6 - 3676.4 - 590,4)            |
 | Golimumabe 50mg solução injetável |    1939,0730   |           2069,6140 (1837,4 - 2370,9 - 129,5)          |
-| Imiglucerase 400U injetável       |    466,5806    |           736,1034 (508,60 - 1504,6 - 230,4)           |  
+| Imiglucerase 400U injetável       |    466,5806    |           736,1034 (508,60 - 1504,6 - 230,4)           |
+  
 Observa-se as redes neurais artificiais tiveram um desempenho consideravelmente superior ao ARIMA para prever o consumo do medicamento filgrastim 300mcg injetável. Já para o golimumabe 50mg solução injetável os resultados obtidos foram próximos, contudo o ARIMA apresentou a média inferior. Por último, o Imiglucerase 400U injetável apresentou um resultado consideravelmente superior para o ARIMA.  
 Como pode ser visto o ARIMA apresentou melhor desempenho para dois medicamentos e as redes neurais artificiais para apenas um. Contudo, é importante observar que modelo criado para o ARIMA passou por processo de tuning com a função `auto_arima`, enquanto que as redes neurais artificias foram modelados apenas com um conjunto de hiper parâmetros. O processo de tuning para o ARIMA representou ganhos que promoveu a mudança dos modelos previamente selecionados de todos os medicamentos para o SARIMA.  
 Assim, sugere-se que um próximo estudo seja realizado testando novas configurações de hiper parâmetros para as redes neurais artificiais, como por exemplo a função de ativação, quantidade de camadas ocultas, neurônios, épocas e algoritmo de retropropagação. Adicionalmente, outros modelos para séries temporais podem ser utilizados como o Facebook Prophet, que vem sendo utilizado amplamente, sendo um algoritmo mais recente que oe ARIMA e menos complexo que as redes neurais artificiais.  
@@ -61,16 +62,25 @@ Por fim, cabe salientar que a métrica utilizada para verificação do melhor mo
 
 ## Filgrastim 300mcg injetável
 ### ARIMA (SARIMA)
+![alt text](imagens/filgrastim_arima.png) 
 ### Redes Neurais Aritificiais (LSTM)
 - Menor RMSE:
+![alt text](imagens/filgrastim_lstm_menor_rmse.png)
 - Maior RMSE:
+![alt text](imagens/filgrastim_lstm_maior_rmse.png)
 ## Golimumabe 50mg solução injetável
 ### ARIMA (SARIMA)
+![alt text](imagens/golimumabe_arima.png)
 ### Redes Neurais Aritificiais (LSTM)
 - Menor RMSE:
+![alt text](imagens/golimumabe_lstm_menor_rmse.png)
 - Maior RMSE:
+![alt text](imagens/golimumabe_lstm_maior_rmse.png)
 ## Imiglucerase 400U injetável 
 ### ARIMA (SARIMA)
+![alt text](imagens/imiglucerase_arima.png)
 ### Redes Neurais Aritificiais (LSTM)
 - Menor RMSE:
+![alt text](imagens/imiglucerase_lstm_menor_rmse.png)
 - Maior RMSE:
+![alt text](imagens/imiglucerase_lstm_maior_rmse.png)
