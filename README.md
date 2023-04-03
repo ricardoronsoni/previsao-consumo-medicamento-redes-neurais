@@ -6,7 +6,7 @@ Contudo, estimar o consumo de dezenas de medicamentos no SUS muitas vezes não �
 Uma serie temporal é uma sequência de observações realizadas em um período. A análise de series temporais permite descrever a dependência dos dados em relação ao tempo e prever valores futuros. Este padrão pode ser do tipo tendencialidade, sazonalidade, ciclicidade ou aleatoriedade.  No caso da Assistência Farmacêutica, é possível utilizar os dados de quantidade dispensada para criar uma serie temporal e ser aplicada em um modelo de programação de medicamentos.
 
 # Objetivo
-Realizar análise comparativa entre os modelos de predição de séries temporais ARIMA (Autorregressivo Integrado de Médias Móveis) e redes neurais arificias para os medicamentos filgrastim 300mcg injetável, golimumabe 50mg solução injetável e imiglucerase 400U injetável, pertencentes ao elenco do Componente Especializado da Assistência Farmacêutica (CEAF), a partir dos registros de dispensação do Sistema de Informações Ambulatoriais do SUS (SIA/SUS). 
+Criar modelo de predição de séries temporais a partir de redes neurais arificias para os medicamentos filgrastim 300mcg injetável, golimumabe 50mg solução injetável e imiglucerase 400U injetável, pertencentes ao elenco do Componente Especializado da Assistência Farmacêutica (CEAF), a partir dos registros de dispensação do Sistema de Informações Ambulatoriais do SUS (SIA/SUS), e comparação dos resultados com o modelo desenvolvido anteriormente utilizado ARIMA (Autorregressivo Integrado de Médias Móveis).
 
 # Aspectos metodológicos
 ## Análise comparativa
